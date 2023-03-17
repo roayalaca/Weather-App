@@ -9,7 +9,7 @@
 
 
 
-.Weather {
+.App {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,7 +69,7 @@
   font-size: 95px;
 }
 
-.Weather1 {
+.App1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -346,42 +346,81 @@ input:checked + .slider:before {
 }
 
 
-@media (max-width: 1300px){
+@media screen and (max-width: 320px){
  
-  .Weather {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .App {
     background-image: radial-gradient(#D5F3FF 0%, #51B4E8 100%);
-    height: 111vh;
-    width: 217vh;
-    gap: 2rem;
+    min-height: 100vh;
+    min-width: 100vh;
   }
 
-  .Weather1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .App1 {
     background-image: radial-gradient(#53388F 0%, #2F2958 100%);
-    height: 111vh;
-    width: 217vh;
-    gap: 2rem;
+    min-height: 100vh;
+    min-width: 100vh;
+  }
+
+  
+  .switch {
+    position: relative;
+    width: 80px;
+    bottom: 12.8rem;
+    left: 48.1rem;
+
   }
 
   .Container{
     width: 40px;
     height: 350px;
     position: relative;
-    left: -17.5rem;
-    top: 6.5rem;
+    left: 28rem;
+    top: 6rem;
+  }
+
+  .Data {
+    width: 220px;
+    height: 160px;
+  }
+
+  .Icon {
+    font-size: 27px;
+  }
+
+  .Pressure {
+    position: absolute;
+    top: 5.7rem;
+    width: 10rem;
+    font-size: 8px;
+  }
+
+  .Place {
+    top: -0.1rem;
+    font-size: 9px;
+    left: 0.9rem;
+  }
+
+  .Place h3{
+    left: -29px;
+  }
+
+  .Image img{
+    width: 90px;
+    position: absolute;
+    bottom: -3.5rem;
+    left: -3.6rem;
+  }
+
+  .Image{
+    right: 3rem;
+    background-color: yellow;
   }
 
   .Input .Input {
     position: relative;
-    width: 254px;
+    width: 170px;
     height: 34px;
-    bottom: 15rem;
-    right: 28.7rem;
+    bottom: 23.5rem;
+    left: 28.2rem;
     border: black 150px;
     border-radius: 12px;
     filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
@@ -391,10 +430,10 @@ input:checked + .slider:before {
   
   .Input .Input1 {
     position: relative;
-    width: 254px;
+    width: 170px;
     height: 34px;
-    bottom: 15rem;
-    right: 28.7rem;
+    bottom: 23.5rem;
+    left: 28.2rem;
     border: black 150px;
     border-radius: 12px;
     filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
@@ -405,10 +444,11 @@ input:checked + .slider:before {
     position: relative;
     width: 3.5rem;
     height: 31px;
-    bottom: 15rem;
-    left: -30.5rem;
+    bottom: 25.6rem;
+    left: 38.5rem;
     border-radius: 10px;
     cursor: pointer;
+    font-size: 11px;
     
   }
 
@@ -416,18 +456,11 @@ input:checked + .slider:before {
     color: #FFFFFF;
     font-size: 12px;
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 590;
     position: relative;
-    left: 5rem;
-  }
-  
-  .switch {
-    position: relative;
-    width: 80px;
-    height: 34px;
-    bottom: 15.5rem;
-    left: 10.5rem;
+    left: 3.4rem;
+    bottom: 0.1rem;
   }
 
   .switch input {
@@ -445,14 +478,15 @@ input:checked + .slider:before {
     background-color: #fff;
     -webkit-transition: 0.4s;
     transition: 0.4s;
-    width: 4rem;
+    width: 3rem;
+    height: 1.5rem;
   }
   
   .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 18px;
+    width: 15px;
     left: 4px;
     bottom: 4px;
     background-color: purple;
@@ -463,8 +497,8 @@ input:checked + .slider:before {
   .slider1:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 15px;
+    width: 18px;
     left: 4px;
     bottom: 4px;
     background-color: #38A0D8;
@@ -494,34 +528,37 @@ input:checked + .slider:before {
   }
   
   .Button button {
-    width: 178px;
-    height: 38px;
+    width: 132px;
+    height: 17px;
     border-radius: 10px;
     cursor: pointer;
     background-color: #38A0D8;
     color: #fff;
     border-color: transparent;
     filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
+    font-size: 9px;
   }
   
   .Button1 button {
-    width: 178px;
-    height: 38px;
+    width: 132px;
+    height: 17px;
     border-radius: 10px;
     cursor: pointer;
     background-color: #7D69F1;
     color: #fff;
     border-color: transparent;
     filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
+    font-size: 9px;
+    
   }
-  
-  
+
   Button {
-    position: absolute;
+    position: relative;
     z-index: 10;
-    bottom: 4.5rem;
-    left: 37rem;
+    bottom: 1.5rem;
+    left: 31.5rem;
     box-shadow: 0px 0px 6px black;
+
   }
 
   .Title{
@@ -533,6 +570,16 @@ input:checked + .slider:before {
     font-size: 16px;
     width: 70rem;
   }
+
+  .Title{
+    position: relative;
+    bottom: -0.8rem;
+    left: 20rem;
+    font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
+    font-size: 12px;
+    width: 70rem;
+  }
   
 
 }
@@ -540,43 +587,73 @@ input:checked + .slider:before {
 
 
 
-
-@media (max-width: 1100px){
+@media screen and (min-width: 321px){
  
-  .Weather {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .App {
     background-image: radial-gradient(#D5F3FF 0%, #51B4E8 100%);
-    height: 100vh;
-    width: 183vh;
-    gap: 2rem;
+    min-height: 100vh;
+    min-width: 100vh;
   }
 
-  .Weather1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .App1 {
     background-image: radial-gradient(#53388F 0%, #2F2958 100%);
-    height: 100vh;
-    width: 183vh;
-    gap: 2rem;
+    min-height: 100vh;
+    min-width: 100vh;
   }
 
   .Container{
     width: 40px;
     height: 350px;
     position: relative;
-    left: -17.5rem;
-    top: 9.5rem;
+    left: 28rem;
+    top: 6rem;
+  }
+
+  .Data {
+    width: 215px;
+    height: 155px;
+  }
+
+  .Icon {
+    font-size: 24px;
+    bottom: 1rem;
+  }
+
+  .Pressure {
+    position: absolute;
+    top: 5.3rem;
+    width: 10rem;
+    font-size: 7px;
+  }
+
+  .Place {
+    top: -0.4rem;
+    font-size: 8px;
+    left: 0.9rem;
+  }
+
+  .Place h3{
+    left: -29px;
+  }
+
+  .Image img{
+    width: 82px;
+    position: absolute;
+    bottom: -3.5rem;
+    left: -3.6rem;
+  }
+
+  .Image{
+    right: 3rem;
+    background-color: yellow;
   }
 
   .Input .Input {
     position: relative;
-    width: 254px;
+    width: 170px;
     height: 34px;
-    bottom: 12rem;
-    right: 27rem;
+    bottom: 23.5rem;
+    left: 28.2rem;
     border: black 150px;
     border-radius: 12px;
     filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
@@ -586,10 +663,10 @@ input:checked + .slider:before {
   
   .Input .Input1 {
     position: relative;
-    width: 254px;
+    width: 170px;
     height: 34px;
-    bottom: 12rem;
-    right: 27rem;
+    bottom: 23.5rem;
+    left: 28.2rem;
     border: black 150px;
     border-radius: 12px;
     filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
@@ -600,10 +677,11 @@ input:checked + .slider:before {
     position: relative;
     width: 3.5rem;
     height: 31px;
-    bottom: 12rem;
-    left: -28.5rem;
+    bottom: 25.6rem;
+    left: 38.5rem;
     border-radius: 10px;
     cursor: pointer;
+    font-size: 10px;
     
   }
 
@@ -611,212 +689,19 @@ input:checked + .slider:before {
     color: #FFFFFF;
     font-size: 12px;
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
+    font-size: 10px;
     font-weight: 590;
     position: relative;
-    left: 5rem;
+    left: 3.4rem;
+    bottom: 0.1rem;
   }
-  
+
   .switch {
     position: relative;
     width: 80px;
-    height: 34px;
-    bottom: 12rem;
-    left: 6.5rem;
-  }
-
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #fff;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    width: 4rem;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: purple;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-  }
-  
-  .slider1:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: #38A0D8;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #fff;
-  }
-  input:focus + .slider {
-    box-shadow: 0 0 1px red;
-  }
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
-  .slider.round {
-    border-radius: 34px;
-  }
-  .slider.round:before {
-    border-radius: 44px;
-  }
-  .switch-checkbox {
-    padding: 50px;
-  }
-  
-  .Button button {
-    width: 178px;
-    height: 38px;
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: #38A0D8;
-    color: #fff;
-    border-color: transparent;
-    filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
-  }
-  
-  .Button1 button {
-    width: 178px;
-    height: 38px;
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: #7D69F1;
-    color: #fff;
-    border-color: transparent;
-    filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
-  }
-  
-  
-  Button {
-    position: absolute;
-    z-index: 10;
-    bottom: 4.5rem;
-    left: 24rem;
-    box-shadow: 0px 0px 6px black;
-  }
-
-  .Title{
-    position: relative;
     bottom: 12.5rem;
-    left: 4.5rem;
-    font-family: 'Lato', sans-serif;
-    color: #FFFFFF;
-    font-size: 16px;
-    width: 70rem;
-  }
-  
+    left: 48.5rem;
 
-}
-
-
-
-
-@media (max-width: 720px){
- 
-  .Weather {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: radial-gradient(#D5F3FF 0%, #51B4E8 100%);
-    height: 100vh;
-    width: 120vh;
-    gap: 2rem;
-  }
-
-  .Weather1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: radial-gradient(#53388F 0%, #2F2958 100%);
-    height: 100vh;
-    width: 120vh;
-    gap: 2rem;
-  }
-
-  .Container{
-    width: 40px;
-    height: 350px;
-    position: relative;
-    left: -1.5rem;
-    top: 9.5rem;
-  }
-
-  .Input .Input {
-    position: relative;
-    width: 304px;
-    height: 34px;
-    bottom: 12rem;
-    right: 11rem;
-    border: black 150px;
-    border-radius: 12px;
-    filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
-    background-image: linear-gradient(#D5F3FF 0%, #51B4E8 100%);
-  }
-
-  
-  .Input .Input1 {
-    position: relative;
-    width: 304px;
-    height: 34px;
-    bottom: 12rem;
-    right: 11rem;
-    border: black 150px;
-    border-radius: 12px;
-    filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
-    background: linear-gradient( #5936B4 0.01%, #0a0338 100%);
-  }
-
-  .Search {
-    position: relative;
-    width: 5rem;
-    height: 31px;
-    bottom: 12rem;
-    left: -12.5rem;
-    border-radius: 10px;
-    cursor: pointer;
-    
-  }
-
-  .Input::placeholder{
-    color: #FFFFFF;
-    font-size: 12px;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    font-weight: 590;
-    position: relative;
-    left: 6.5xrem;
-  }
-  
-  .switch {
-    position: relative;
-    width: 80px;
-    height: 34px;
-    bottom: 15.8rem;
-    left: 11.5rem;
   }
 
   .switch input {
@@ -834,16 +719,17 @@ input:checked + .slider:before {
     background-color: #fff;
     -webkit-transition: 0.4s;
     transition: 0.4s;
-    width: 4rem;
+    width: 2.5rem;
+    height: 1.2rem;
   }
   
   .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 14px;
+    width: 12px;
     left: 4px;
-    bottom: 4px;
+    bottom: 3px;
     background-color: purple;
     -webkit-transition: 0.4s;
     transition: 0.4s;
@@ -852,10 +738,10 @@ input:checked + .slider:before {
   .slider1:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 14px;
+    width: 12px;
     left: 4px;
-    bottom: 4px;
+    bottom: 3px;
     background-color: #38A0D8;
     -webkit-transition: 0.4s;
     transition: 0.4s;
@@ -883,85 +769,118 @@ input:checked + .slider:before {
   }
   
   .Button button {
-    width: 178px;
-    height: 38px;
+    width: 126px;
+    height: 14px;
     border-radius: 10px;
     cursor: pointer;
     background-color: #38A0D8;
     color: #fff;
     border-color: transparent;
     filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
+    font-size: 7px;
   }
   
   .Button1 button {
-    width: 178px;
-    height: 38px;
+    width: 126px;
+    height: 14px;
     border-radius: 10px;
     cursor: pointer;
     background-color: #7D69F1;
     color: #fff;
     border-color: transparent;
     filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
+    font-size: 7px;
+    
   }
   
   
   Button {
-    position: absolute;
+    position: relative;
     z-index: 10;
-    bottom: 4.5rem;
-    left: 16rem;
+    bottom: 1.5rem;
+    left: 31.5rem;
     box-shadow: 0px 0px 6px black;
+
   }
 
   .Title{
     position: relative;
-    bottom: 15.5rem;
-    left: 6.8rem;
+    bottom: -0.8rem;
+    left: 20rem;
     font-family: 'Lato', sans-serif;
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 12px;
     width: 70rem;
   }
+  
   
 
 }
 
-@media (max-width: 570px){
+
+
+
+@media screen and (min-width: 577px){
  
-  .Weather {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .App {
     background-image: radial-gradient(#D5F3FF 0%, #51B4E8 100%);
-    height: 100vh;
-    width: 120vh;
-    gap: 2rem;
+    min-height: 100vh;
+    min-width: 100vh;
   }
 
-  .Weather1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .App1 {
     background-image: radial-gradient(#53388F 0%, #2F2958 100%);
-    height: 100vh;
-    width: 120vh;
-    gap: 2rem;
+    min-height: 100vh;
+    min-width: 100vh;
   }
 
   .Container{
     width: 40px;
     height: 350px;
     position: relative;
-    left: -10.5rem;
-    top: 9.5rem;
+    left: 27rem;
+    top: 7.5rem;
+  }
+
+  .Data {
+    width: 230px;
+    height: 170px;
+  }
+
+  .Icon {
+    font-size: 26px;
+  }
+
+  .Pressure {
+    position: absolute;
+    top: 5.7rem;
+    width: 10rem;
+    font-size: 8px;
+  }
+
+  .Place {
+    top: -0.1rem;
+    font-size: 10px;
+  }
+
+  .Image img{
+    width: 95px;
+    position: absolute;
+    bottom: -2.5rem;
+    left: -3.2rem;
+  }
+
+  .Image{
+    right: 3rem;
+    background-color: yellow;
   }
 
   .Input .Input {
     position: relative;
-    width: 254px;
+    width: 210px;
     height: 34px;
-    bottom: 12rem;
-    right: 18rem;
+    bottom: 24.5rem;
+    left: 26.2rem;
     border: black 150px;
     border-radius: 12px;
     filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
@@ -971,10 +890,10 @@ input:checked + .slider:before {
   
   .Input .Input1 {
     position: relative;
-    width: 254px;
+    width: 210px;
     height: 34px;
-    bottom: 12rem;
-    right: 18rem;
+    bottom: 24.5rem;
+    left: 26.2rem;
     border: black 150px;
     border-radius: 12px;
     filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
@@ -985,8 +904,234 @@ input:checked + .slider:before {
     position: relative;
     width: 3.5rem;
     height: 31px;
-    bottom: 12rem;
-    left: -19.5rem;
+    bottom: 26.6rem;
+    left: 39.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 11px;
+    
+  }
+
+  .Input::placeholder{
+    color: #FFFFFF;
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 590;
+    position: relative;
+    left: 4rem;
+    bottom: 0.1rem;
+  }
+
+  
+  .switch {
+    position: relative;
+    width: 80px;
+    bottom: 13.2rem;
+    left: 49.5rem;
+
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    width: 3.5rem;
+    height: 1.5rem;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: purple;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .slider1:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #38A0D8;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #fff;
+  }
+  input:focus + .slider {
+    box-shadow: 0 0 1px red;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  .slider.round {
+    border-radius: 34px;
+  }
+  .slider.round:before {
+    border-radius: 44px;
+  }
+  .switch-checkbox {
+    padding: 50px;
+  }
+  
+  .Button button {
+    width: 148px;
+    height: 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #38A0D8;
+    color: #fff;
+    border-color: transparent;
+    filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
+  }
+  
+  .Button1 button {
+    width: 148px;
+    height: 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #7D69F1;
+    color: #fff;
+    border-color: transparent;
+    filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
+    
+  }
+  
+  
+  Button {
+    position: relative;
+    z-index: 10;
+    bottom: -0.3rem;
+    left: 30.5rem;
+    box-shadow: 0px 0px 6px black;
+
+  }
+
+  .Title{
+    position: relative;
+    bottom: -0.1rem;
+    left: 18rem;
+    font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
+    font-size: 12px;
+    width: 70rem;
+  }
+  
+  
+
+}
+
+
+
+
+@media screen and (min-width: 768px){
+ 
+  .App {
+    background-image: radial-gradient(#D5F3FF 0%, #51B4E8 100%);
+    min-height: 100vh;
+    min-width: 100vh;
+  }
+
+  .App1 {
+    background-image: radial-gradient(#53388F 0%, #2F2958 100%);
+    min-height: 100vh;
+    min-width: 100vh;
+  }
+
+  .Container{
+    width: 40px;
+    height: 350px;
+    position: relative;
+    left: 25.8rem;
+    top: 9.5rem;
+  }
+
+  .Data {
+    width: 285px;
+    height: 210px;
+  }
+
+  .Icon {
+    font-size: 39px;
+  }
+
+  .Pressure {
+    position: absolute;
+    top: 7.5rem;
+    width: 10rem;
+  }
+
+  .Place {
+    top: 2rem;
+    font-size: 13.5px;
+  }
+
+  .Image img{
+    width: 120px;
+    position: absolute;
+    bottom: -1rem;
+    left: -1.8rem;
+  }
+
+  .Image{
+    right: 3rem;
+    background-color: yellow;
+  }
+
+  
+  .Input .Input {
+    position: relative;
+    width: 240px;
+    height: 32px;
+    bottom: 24.5rem;
+    left: 25rem;
+    border: black 150px;
+    border-radius: 12px;
+    filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
+    background-image: linear-gradient(#D5F3FF 0%, #51B4E8 100%);
+  }
+
+  
+  .Input .Input1 {
+    position: relative;
+    width: 240px;
+    height: 32px;
+    bottom: 25.5rem;
+    left: 25rem;
+    border: black 150px;
+    border-radius: 12px;
+    filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
+    background: linear-gradient( #5936B4 0.01%, #0a0338 100%);
+  }
+
+  .Search {
+    position: relative;
+    width: 4.5rem;
+    height: 31px;
+    bottom: 26.5rem;
+    left: 40.2rem;
     border-radius: 10px;
     cursor: pointer;
     
@@ -999,15 +1144,15 @@ input:checked + .slider:before {
     font-size: 16px;
     font-weight: 590;
     position: relative;
-    left: 6¿5rem;
+    left: 5.8rem;
   }
-  
+
   .switch {
     position: relative;
     width: 80px;
-    height: 34px;
-    bottom: 15.8rem;
-    left: 0.5rem;
+    bottom: 12.8rem;
+    left: 54.5rem;
+
   }
 
   .switch input {
@@ -1026,6 +1171,204 @@ input:checked + .slider:before {
     -webkit-transition: 0.4s;
     transition: 0.4s;
     width: 4rem;
+    height: 2rem;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: purple;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .slider1:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #38A0D8;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #fff;
+  }
+  input:focus + .slider {
+    box-shadow: 0 0 1px red;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  .slider.round {
+    border-radius: 34px;
+  }
+  .slider.round:before {
+    border-radius: 44px;
+  }
+  .switch-checkbox {
+    padding: 50px;
+  }
+
+    
+  .Button button {
+    width: 165px;
+    height: 32px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #38A0D8;
+    color: #fff;
+    border-color: transparent;
+    filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
+  }
+  
+  .Button1 button {
+    width: 165px;
+    height: 32px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #7D69F1;
+    color: #fff;
+    border-color: transparent;
+    filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
+    
+  }
+  
+  
+  Button {
+    position: relative;
+    z-index: 10;
+    bottom: -1rem;
+    left: 30rem;
+    box-shadow: 0px 0px 6px black;
+  }
+
+  .Title{
+    position: relative;
+    bottom: -0.3rem;
+    left: 12rem;
+    font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
+    font-size: 16px;
+    width: 70rem;
+  }
+  
+
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 992px){
+ 
+  .App {
+    background-image: radial-gradient(#D5F3FF 0%, #51B4E8 100%);
+    min-height: 100vh;
+    min-width: 100vh;
+    display: grid;
+    place-content: center;
+  }
+
+  .App1 {
+    background-image: radial-gradient(#53388F 0%, #2F2958 100%);
+    min-height: 100vh;
+    min-width: 100vh;
+    display: grid;
+    place-content: center;
+  }
+
+  .Container{
+    width: 40px;
+    height: 350px;
+    position: relative;
+    left: 28.5rem;
+    top: 9rem;
+  }
+
+  .Input .Input {
+    position: relative;
+    width: 250px;
+    height: 34px;
+    bottom: 25.5rem;
+    left: 27rem;
+    border: black 150px;
+    border-radius: 12px;
+    filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
+    background-image: linear-gradient(#D5F3FF 0%, #51B4E8 100%);
+  }
+
+  
+  .Input .Input1 {
+    position: relative;
+    width: 250px;
+    height: 34px;
+    bottom: 25rem;
+    left: 27rem;
+    border: black 150px;
+    border-radius: 12px;
+    filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
+    background: linear-gradient( #5936B4 0.01%, #0a0338 100%);
+  }
+
+  .Search {
+    position: relative;
+    width: 5.5rem;
+    height: 31px;
+    bottom: 27.59rem;
+    left: 42.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    
+  }
+
+  .Input::placeholder{
+    color: #FFFFFF;
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 590;
+    position: relative;
+    left: 5.4rem;
+  }
+  
+  .switch {
+    position: relative;
+    width: 80px;
+    bottom: -4rem;
+    left: 60.5rem;
+
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    width: 4rem;
+    height: 2rem;
   }
   
   .slider:before {
@@ -1093,21 +1436,22 @@ input:checked + .slider:before {
     color: #fff;
     border-color: transparent;
     filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
+    
   }
   
   
   Button {
-    position: absolute;
+    position: relative;
     z-index: 10;
-    bottom: 4.5rem;
-    left: 11rem;
+    bottom: 1rem;
+    left: 33rem;
     box-shadow: 0px 0px 6px black;
   }
 
   .Title{
     position: relative;
-    bottom: 15.5rem;
-    left: 4.8rem;
+    bottom: -0.3rem;
+    left: 6rem;
     font-family: 'Lato', sans-serif;
     color: #FFFFFF;
     font-size: 16px;
@@ -1116,9 +1460,6 @@ input:checked + .slider:before {
   
 
 }
-
-
-
 
 
 

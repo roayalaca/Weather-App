@@ -4,10 +4,9 @@ import axios from "axios";
 
 useState
 
-const Weather = ({ component, set }) => {
+const Weather = ({ component, set, dark }) => {
 
     const [temperature, setTemperature] = useState(true)
-    const [dark, setDark] = useState(false)
     const icon = component.weather?.[0]?.icon
 
         
@@ -23,7 +22,7 @@ const Weather = ({ component, set }) => {
 
     return (
         
-        <div className={`Weather ${dark ? 'Weather1'  : 'Weather'}`}>
+        <div >
 
             <h1 className="Title">Weather App</h1>
 
@@ -58,10 +57,7 @@ const Weather = ({ component, set }) => {
             </div>
 
             
-            <label className='switch'>
-                <input type="checkbox" onChange={() => setDark(!dark)} />
-                <span className={`slider round ${dark ? 'slider1 round1'  : 'slider round'}`}></span>
-            </label>
+            
 
             <div className="Input">
             <input type="text"
@@ -69,6 +65,7 @@ const Weather = ({ component, set }) => {
             value={city}
             onChange={ (e) => setCity(e.target.value)}
             className={`Input ${dark ? 'Input1'  : 'Input'}`}/>
+            
             
             </div>
 
