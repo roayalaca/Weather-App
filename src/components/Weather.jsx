@@ -4,7 +4,7 @@ import axios from "axios";
 
 useState
 
-const Weather = ({ component, set, dark }) => {
+const Weather = ({ component, set, dark, setDark }) => {
 
     const [temperature, setTemperature] = useState(true)
     const icon = component.weather?.[0]?.icon

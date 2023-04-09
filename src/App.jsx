@@ -37,6 +37,7 @@ function App() {
   return (
     <div className={`App ${dark1 ? 'App1'  : 'App'}`}>
 
+      
 
       {
         loader && <Loader/>
@@ -47,6 +48,7 @@ function App() {
       component = { dataApi }
       set = { setDataApi }
       dark = {dark1}
+      setDark={setDark1}
 
       />
 
