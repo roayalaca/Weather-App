@@ -74,7 +74,6 @@
 
 
 .Image{
-  position: absolute;
   z-index: 10;
   left : 185px;
   bottom: 18rem;
@@ -121,7 +120,6 @@
 
   width: 6rem;
   height: 7.5rem;
-  position: relative;
   font-size: 2.7rem;
   left: 0.8rem;
   top: 1.5rem;
@@ -133,7 +131,6 @@
 
   width: 6rem;
   height: 7.5rem;
-  position: relative;
   font-size: 2.7rem;
   left: 0.8rem;
   top: 1.5rem;
@@ -141,7 +138,6 @@
 }
 
 .Pressure {
-  position: relative;
   left: 1rem;
   top: 1rem;
   font-size: 12px;
@@ -151,7 +147,6 @@
 }
 
 .Pressure1 {
-  position: relative;
   left: 1rem;
   top: 1rem;
   font-size: 12px;
@@ -161,7 +156,6 @@
 }
 
 .Place {
-  position: relative;
   display: flex;
   left: 1rem;
   top: 1.8rem;
@@ -172,7 +166,6 @@
 }
 
 .Place1 {
-  position: relative;
   display: flex;
   left: 1rem;
   top: 1.8rem;
@@ -184,7 +177,6 @@
 
 
 .Place h3 {
-  position: relative;
   right: 1rem;
   font-size: 12px;
   height: 3rem;
@@ -197,7 +189,6 @@
 }
 
 .Place1 h3 {
-  position: relative;
   right: 1rem;
   font-size: 12px;
   height: 3rem;
@@ -215,7 +206,6 @@
 }
 
 .switch {
-  position: relative;
   width: 70px;
   height: 34px;
 }
@@ -225,7 +215,6 @@
   height: 0;
 }
 .slider {
-  position: absolute;
   cursor: pointer;
   top: 0;
   left: 0;
@@ -237,7 +226,6 @@
 }
 
 .slider:before {
-  position: absolute;
   content: "";
   height: 26px;
   width: 26px;
@@ -249,7 +237,6 @@
 }
 
 .slider1:before {
-  position: absolute;
   content: "";
   height: 26px;
   width: 26px;
@@ -296,12 +283,10 @@ input:checked + .slider:before {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   font-weight: 590;
-  position: relative;
   left: 8rem;
 }
 
 .Input .Input1 {
-  position: relative;
   width: 22rem;
   height: 34px;
   bottom: 15rem;
@@ -314,7 +299,6 @@ input:checked + .slider:before {
 
 
 .Search {
-  position: relative;
   width: 5rem;
   height: 31px;
   bottom: 15rem;
@@ -327,13 +311,14 @@ input:checked + .slider:before {
 .Container{
   width: 50px;
   height: 350px;
-  position: relative;
   left: 6rem;
   top: 7rem;
 }
 
 
 @media screen and (max-width: 320px){
+
+
 
   .Image img{
     width: 20px;
