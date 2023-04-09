@@ -37,10 +37,6 @@ function App() {
   return (
     <div className={`App ${dark1 ? 'App1'  : 'App'}`}>
 
-      <label className='switch'>
-        <input type="checkbox" onChange={() => setDark1(!dark1)} />
-        <span className={`slider round ${dark1 ? 'slider1 round1'  : 'slider round'}`}></span>
-      </label>
 
       {
         loader && <Loader/>
