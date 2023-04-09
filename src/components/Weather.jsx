@@ -26,6 +26,11 @@ const Weather = ({ component, set, dark }) => {
             <div className="buttonContainer">
                    <h1 className="Title">Weather App</h1>
 
+                   <label className='switch'>
+                        <input type="checkbox" onChange={() => setDark(!dark)} />
+                        <span className={`slider round ${dark ? 'slider1 round1'  : 'slider round'}`}></span>
+                    </label>
+
                     <div className="Input">
                         <input type="text"
                         placeholder="Look for a city!"
@@ -37,10 +42,6 @@ const Weather = ({ component, set, dark }) => {
                         <button className={`Search ${dark ? 'Search1'  : 'Search'}`} onClick={ searchByCity }> Search </button> 
                     </div>
 
-                    <label className='switch'>
-                        <input type="checkbox" onChange={() => setDark(!dark)} />
-                        <span className={`slider round ${dark ? 'slider1 round1'  : 'slider round'}`}></span>
-                    </label>
                
 
             </div>
