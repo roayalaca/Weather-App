@@ -298,12 +298,7 @@ input:checked + .slider:before {
 }
 
 
-.Container{
-  width: 50px;
-  height: 350px;
-  left: 6rem;
-  top: 7rem;
-}
+
 
 
 @media screen and (max-width: 320px){
@@ -327,6 +322,14 @@ input:checked + .slider:before {
   .Input .Input{
     width: 11rem;
     height: 1.7rem;
+    padding-left: 4rem;
+  }
+
+  .Input .Input1{
+    width: 11rem;
+    height: 1.7rem;
+    color: #fff;
+    padding-left: 4rem;
   }
 
   .Input::placeholder{
@@ -335,7 +338,7 @@ input:checked + .slider:before {
     font-size: 11px;
     font-family: 'Lato', sans-serif;
     font-weight: 590;
-    left: 3.6rem;
+    left: -0.4rem;
     bottom: 3px;
   }
 
@@ -387,6 +390,18 @@ input:checked + .slider:before {
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
+
+  .slider1:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgba(8, 8, 172, 0.664);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
   
   .Container{
     height: 200px;
@@ -410,6 +425,7 @@ input:checked + .slider:before {
     filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
     box-shadow: 0px 2px 3px;
     position: relative;
+    left: 4.6rem;
   }
 
   .Data1{
@@ -426,19 +442,20 @@ input:checked + .slider:before {
     filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
     box-shadow: 0px 2px 3px;
     position: relative;
+    left: 4.6rem;
   }
 
   .Image{
     z-index: 10;
-    position: absolute;
-    left : 136px;
-    bottom: 13.2rem;
+    left : -4rem;
+    bottom: 4.5rem;
+    position: relative;
     
   }
   
   .Image img {
-    width: 148px;
-    height: 178px;
+    width: 140px;
+    height: 170px;
   }
 
   
@@ -531,21 +548,1100 @@ input:checked + .slider:before {
   width: 12rem;
   left: 1rem;
 }
+.Button{
+  position: relative;
+  left: 4.5rem;
+  top: 1rem;
+  height: 10px;
+  width: 10px;
+}
 
-  .Button{
-    position: relative;
-    left: 4.5rem;
-    top: 1rem;
-    height: 10px;
-    width: 10px;
+.Button button{
+  width: 7rem;
+  font-size: 11px;
+}
+
+}
+
+@media screen and (min-width: 321px){
+
+  .App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .Button button{
-    width: 7rem;
+
+
+  .buttonContainer{
+    display: flex;
+    flex-direction: column;
+    bottom: 5rem;
+    position: relative;
+    bottom: 5rem;
+  }
+
+  .Input .Input{
+    width: 11.5rem;
+    height: 1.9rem;
+    padding-left: 5.5rem ;
+  }
+
+  .Input .Input1{
+    width: 11.5rem;
+    height: 1.9rem;
+    padding-left: 5.5rer;
+    color: #fff;
+  }
+
+  .Input::placeholder{
+    color: #FFFFFF;
+    position: relative;
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 590;
+    left: -1.8rem;
+    bottom: 3px;
+  }
+
+  .Search {
+    height: 1.9rem;
     font-size: 11px;
   }
 
+  .Title{
+    font-size: 12px;
+
+  }
+
+  .switch{
+    position: relative;
+    left: 12rem;  
+    bottom: 1.2rem;  
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    width: 3.4rem;
+    height: 1.6rem;
+    background-color: #fff;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: purple;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .slider1:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgba(8, 8, 172, 0.664);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .Container{
+    height: 200px;
+    width: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Data{
+    clip-path: polygon(0 0, 0 200%, 500% 150%);
+    border-radius: 4.85px;
+    width: 16rem;
+    height: 11rem;
+    background: linear-gradient( #E5F2FF 0%, #D5F3FF 97.4%);
+    border-top-right-radius: 170rem 50rem ;
+    border-top-left-radius: 14rem;
+    border-bottom-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    bottom: 2rem;
+    filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
+    box-shadow: 0px 2px 3px;
+    position: relative;
+    left: 5rem;
+  }
+
+  .Data1{
+    clip-path: polygon(0 0, 0 200%, 500% 150%);
+    border-radius: 4.85px;
+    width: 16rem;
+    height: 11rem;
+    background: linear-gradient( #5836B3 0%, #5936B4 0.01%, #362A84 100%);
+    border-top-right-radius: 170rem 50rem ;
+    border-top-left-radius: 14rem;
+    border-bottom-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    bottom: 2rem;
+    filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
+    box-shadow: 0px 2px 3px;
+    position: relative;
+  }
+
+  .Image{
+    z-index: 10;
+    position: relative;
+    bottom: 4.5rem;
+    left: -4.8rem;
+    
+  }
+  
+  .Image img {
+    width: 153px;
+    height: 183px;
+  }
+
+  
+.Icon {
+
+  width: 6rem;
+  height: 7.5rem;
+  font-size:1.9rem;
+  position: relative;
+  left: 0.8rem;
+  top: 1rem;
+  color: #026EED;
 }
+
+
+.Icon1 {
+
+  width: 6rem;
+  height: 7.5rem;
+  font-size:1.9rem;
+  position: relative;
+  left: 0.8rem;
+  top: 1rem;
+  color: #fff;
+}
+
+.Pressure {
+  font-size: 11px;
+  font-family: 'Lato', sans-serif;
+  color: #56A5F1;
+  position: relative;
+  top: -2.2rem;
+}
+
+.Pressure1 {
+  font-size: 11px;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  position: relative;
+  top: -2.2rem;
+
+}
+
+.Place {
+  display: flex;
+  font-size: 10px;
+  font-family: 'Lato', sans-serif;
+  color: #026EED;
+  position: relative;
+  top: -1.8rem;
+}
+
+.Place1 {
+  display: flex;
+  font-size: 10px;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  position: relative;
+  top: -1.8rem;
+}
+
+
+.Place h3 {
+  right: 1.9rem;
+  position: relative;
+  font-size: 10px;
+  height: 3rem;
+  width: 4rem;
+  font-family: 'Lato', sans-serif;
+  top: 0.4rem;
+  color: #026EED;
+  font-weight: bold;
+ 
+}
+
+.Place1 h3 {
+  right: 1.9rem;
+  position: relative;
+  font-size: 10px;
+  height: 3rem;
+  width: 4rem;
+  font-family: 'Lato', sans-serif;
+  top: 0.4rem;
+  color: #fff;
+  font-weight: bold;
+ 
+}
+.Place h2 {
+  height: 3.4rem ;
+  width: 12rem;
+  left: 1xrem;
+}
+.Button{
+  position: relative;
+  left: 4.5rem;
+  top: 1rem;
+  height: 10px;
+  width: 10px;
+}
+
+.Button button{
+  width: 8rem;
+  font-size: 12px;
+  height: 2.5rem;
+}
+
+}
+
+@media screen and (min-width: 576px){
+
+  .App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  .buttonContainer{
+    display: flex;
+    flex-direction: column;
+    bottom: 5rem;
+    position: relative;
+    bottom: 5rem;
+  }
+
+  .Input .Input{
+    width: 24.5rem;
+    height: 2rem;
+    position: relative;
+    top: 0rem;
+    left: -1rem;
+    padding-left: 12rem;
+  }
+
+  .Input .Input1{
+    width: 24.5rem;
+    height: 2rem;
+    position: relative;
+    top: 0rem;
+    left: -1rem;
+    padding-left: 12rem;
+    color: #fff;
+  }
+
+
+  .Input::placeholder{
+    color: #FFFFFF;
+    position: relative;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 590;
+    left: -2.2rem;
+    bottom: 1px;
+  }
+
+  .Search {
+    height: 2rem;
+    font-size: 14px;
+    width: 6.5rem;
+  }
+
+  .Title{
+    font-size: 18px;
+
+  }
+
+  .switch{
+    position: relative;
+    left: 26rem;  
+    bottom: 1.2rem;  
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    width: 4.4rem;
+    height: 1.8rem;
+    background-color: #fff;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 5px;
+    bottom: 4px;
+    background-color: purple;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .slider1:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 16px;
+    bottom: 4px;
+    background-color: rgba(8, 8, 172, 0.664);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .Container{
+    height: 200px;
+    width: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Data{
+    clip-path: polygon(0 0, 0 200%, 500% 150%);
+    border-radius: 4.85px;
+    width: 18rem;
+    height: 13rem;
+    background: linear-gradient( #E5F2FF 0%, #D5F3FF 97.4%);
+    border-top-right-radius: 170rem 50rem ;
+    border-top-left-radius: 14rem;
+    border-bottom-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    bottom: 2rem;
+    filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
+    box-shadow: 0px 2px 3px;
+    position: relative;
+    left: 12rem;
+  }
+
+  .Data1{
+    clip-path: polygon(0 0, 0 200%, 500% 150%);
+    border-radius: 4.85px;
+    width: 18rem;
+    height: 13rem;
+    background: linear-gradient( #5836B3 0%, #5936B4 0.01%, #362A84 100%);
+    border-top-right-radius: 170rem 50rem ;
+    border-top-left-radius: 14rem;
+    border-bottom-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    bottom: 2rem;
+    filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
+    box-shadow: 0px 2px 3px;
+    position: relative;
+  }
+
+  .Image{
+    z-index: 10;
+    position: relative;
+    bottom: 4.8rem;
+    left: 1.8rem;
+    
+  }
+  
+  .Image img {
+    width: 160px;
+    height: 190px;
+  }
+
+  
+.Icon {
+
+  width: 6rem;
+  height: 7.5rem;
+  font-size:1.9rem;
+  position: relative;
+  left: 0.8rem;
+  top: 1rem;
+  color: #026EED;
+}
+
+
+.Icon1 {
+
+  width: 6rem;
+  height: 7.5rem;
+  font-size:1.9rem;
+  position: relative;
+  left: 0.8rem;
+  top: 1rem;
+  color: #fff;
+}
+
+.Pressure {
+  font-size: 13px;
+  font-family: 'Lato', sans-serif;
+  color: #56A5F1;
+  position: relative;
+  top: -1.8rem;
+}
+
+.Pressure1 {
+  font-size: 13px;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  position: relative;
+  top: -1.8rem;
+
+}
+
+.Place {
+  display: flex;
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  color: #026EED;
+  position: relative;
+  top: -1.1rem;
+}
+
+.Place1 {
+  display: flex;
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  position: relative;
+  top: -1.1rem;
+}
+
+
+.Place h3 {
+  right: 2.1rem;
+  position: relative;
+  font-size: 11px;
+  height: 3rem;
+  width: 4rem;
+  font-family: 'Lato', sans-serif;
+  top: 0.4rem;
+  color: #026EED;
+  font-weight: bold;
+ 
+}
+
+.Place1 h3 {
+  right: 2.1rem;
+  position: relative;
+  font-size: 11px;
+  height: 3rem;
+  width: 4rem;
+  font-family: 'Lato', sans-serif;
+  top: 0.4rem;
+  color: #fff;
+  font-weight: bold;
+ 
+}
+.Place h2 {
+  height: 3.4rem ;
+  width: 12rem;
+  left: 1xrem;
+}
+.Button{
+  position: relative;
+  left: 11rem;
+  top: 1rem;
+  height: 10px;
+  width: 10px;
+}
+
+.Button button{
+  width: 9.5rem;
+  font-size: 12px;
+  height: 2.6rem;
+}
+
+}
+
+
+@media screen and (min-width: 768px){
+
+  .App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  .buttonContainer{
+    display: flex;
+    flex-direction: column;
+    bottom: 5rem;
+    position: relative;
+    bottom: 7rem;
+  }
+
+  .Input .Input{
+    width: 19.5rem;
+    height: 2rem;
+    position: relative;
+    top: 0rem;
+    left: 0.9em;
+    padding-left: 8rem;
+  }
+
+  .Input .Input1{
+    width: 19.5rem;
+    height: 2rem;
+    position: relative;
+    top: 0rem;
+    left: 0.9em;
+    padding-left: 8rem;
+    color: #fff;
+  }
+
+  .Input::placeholder{
+    color: #FFFFFF;
+    position: relative;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 590;
+    left: -1.1rem;
+    bottom: 2px;
+  }
+
+
+
+
+  .Search {
+    height: 2rem;
+    font-size: 14px;
+    width: 5rem;
+    position: relative;
+    top: 0rem;
+    left: 0.9rem;
+  }
+
+  .Title{
+    font-size: 18px;
+    position: relative;
+    right: 9rem;
+    top: 3.5rem;
+  }
+
+  .switch{
+    position: relative;
+    left: 29rem;  
+    bottom: -2.2rem;  
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    width: 4.4rem;
+    height: 1.8rem;
+    background-color: #fff;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 5px;
+    bottom: 4px;
+    background-color: purple;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .slider1:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 16px;
+    bottom: 4px;
+    background-color: rgba(8, 8, 172, 0.664);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .Container{
+    height: 200px;
+    width: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Data{
+    clip-path: polygon(0 0, 0 200%, 500% 150%);
+    border-radius: 4.85px;
+    width: 20rem;
+    height: 14rem;
+    background: linear-gradient( #E5F2FF 0%, #D5F3FF 97.4%);
+    border-top-right-radius: 170rem 50rem ;
+    border-top-left-radius: 14rem;
+    border-bottom-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    bottom: 2rem;
+    filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
+    box-shadow: 0px 2px 3px;
+    position: relative;
+    left: 9.8rem;
+  }
+
+  .Data1{
+    clip-path: polygon(0 0, 0 200%, 500% 150%);
+    border-radius: 4.85px;
+    width: 20rem;
+    height: 14rem;
+    background: linear-gradient( #5836B3 0%, #5936B4 0.01%, #362A84 100%);
+    border-top-right-radius: 170rem 50rem ;
+    border-top-left-radius: 14rem;
+    border-bottom-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    bottom: 2rem;
+    filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
+    box-shadow: 0px 2px 3px;
+    position: relative;
+    left: 9.8rem;
+  }
+
+  .Image{
+    z-index: 10;
+    position: relative;
+    bottom: 5rem;
+    left: -0.9rem;
+    
+  }
+  
+  .Image img {
+    width: 168px;
+    height: 198px;
+  }
+
+  
+.Icon {
+
+  width: 6rem;
+  height: 7.5rem;
+  font-size:2.2rem;
+  position: relative;
+  left: 0.8rem;
+  top: 1.3rem;
+  color: #026EED;
+}
+
+
+.Icon1 {
+
+  width: 6rem;
+  height: 7.5rem;
+  font-size:2.2rem;
+  position: relative;
+  left: 0.8rem;
+  top: 1.3rem;
+  color: #fff;
+}
+
+.Pressure {
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  color: #56A5F1;
+  position: relative;
+  top: -1.2rem;
+}
+
+.Pressure1 {
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  position: relative;
+  top: -1.2rem;
+
+}
+
+.Place {
+  display: flex;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  color: #026EED;
+  position: relative;
+  top: -0.5rem;
+}
+
+.Place1 {
+  display: flex;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  position: relative;
+  top: -0.5rem;
+}
+
+
+.Place h3 {
+  right: 2.3rem;
+  position: relative;
+  font-size: 12px;
+  height: 3rem;
+  width: 4rem;
+  font-family: 'Lato', sans-serif;
+  top: 0.4rem;
+  color: #026EED;
+  font-weight: bold;
+ 
+}
+
+.Place1 h3 {
+  right: 2.3rem;
+  position: relative;
+  font-size: 12px;
+  height: 3rem;
+  width: 4rem;
+  font-family: 'Lato', sans-serif;
+  top: 0.4rem;
+  color: #fff;
+  font-weight: bold;
+ 
+}
+.Place h2 {
+  height: 3.4rem ;
+  width: 12rem;
+  left: 1xrem;
+}
+.Button{
+  position: relative;
+  left: 8rem;
+  top: 1.2rem;
+  height: 10px;
+  width: 10px;
+}
+
+.Button button{
+  width: 9.5rem;
+  font-size: 12px;
+  height: 2.6rem;
+}
+
+}
+
+@media screen and (min-width: 992px){
+
+  .App{
+    background-color: red;
+  }
+
+
+
+  .buttonContainer{
+    bottom: 5rem;
+    position: relative;
+    bottom: 8rem;
+  }
+
+  .Input .Input{
+    width: 25.5rem;
+    height: 2.2rem;
+    position: relative;
+    padding-left: 12rem;
+  }
+
+  .Input .Input1{
+    width: 25.5rem;
+    height: 2.2rem;
+    position: relative;
+    color: #fff;
+    padding-left: 12rem;
+  }
+
+  .Input::placeholder{
+    color: #FFFFFF;
+    position: relative;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 590;
+    left: -1.9rem;
+    bottom: 0px;
+  }
+
+  
+
+
+  .Search {
+    height: 2.2rem;
+    font-size: 15px;
+    width: 7rem;
+    position: relative;
+  }
+
+  .Title{
+    font-size: 18px;
+    position: relative;
+    right: 13rem;
+  }
+
+  .switch{
+    position: relative;
+    left: 41rem;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    width: 4.4rem;
+    height: 1.8rem;
+    background-color: #fff;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 5px;
+    bottom: 4px;
+    background-color: purple;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .slider1:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 16px;
+    bottom: 4px;
+    background-color: rgba(8, 8, 172, 0.664);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .Container{
+    position: relative;
+    right: 4rem;
+    width: 30rem;
+    height: 12rem;
+    top: 1rem;
+  }
+
+  .Data{
+    clip-path: polygon(0 0, 0 200%, 500% 150%);
+    border-radius: 4.85px;
+    width: 22rem;
+    height: 16rem;
+    background: linear-gradient( #E5F2FF 0%, #D5F3FF 97.4%);
+    border-top-right-radius: 170rem 50rem ;
+    border-top-left-radius: 14rem;
+    border-bottom-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    bottom: 2rem;
+    filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
+    box-shadow: 0px 2px 3px;
+    position: absolute;
+    left: 9.8rem;
+  }
+
+  .Data1{
+    clip-path: polygon(0 0, 0 200%, 500% 150%);
+    border-radius: 4.85px;
+    width: 22rem;
+    height: 16rem;
+    background: linear-gradient( #5836B3 0%, #5936B4 0.01%, #362A84 100%);
+    border-top-right-radius: 170rem 50rem ;
+    border-top-left-radius: 14rem;
+    border-bottom-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    bottom: 2rem;
+    filter: drop-shadow(0px 4.85px 4.85px, rgba(0, 0, 0, 0.25));
+    box-shadow: 0px 2px 3px;
+    position: absolute;
+    left: 9.8rem;
+  }
+
+  .Image{
+    z-index: 10;
+    position: relative;
+    bottom: 8rem;
+    left: 11rem;
+    
+  }
+  
+  .Image img {
+    width: 178px;
+    height: 208px;
+  }
+
+  .Icon {
+
+    width: 6rem;
+    height: 7.5rem;
+    font-size:2.7rem;
+    position: relative;
+    left: 0.8rem;
+    top: 1.5rem;
+    color: #026EED;
+  }
+  
+  
+  .Icon1 {
+  
+    width: 6rem;
+    height: 7.5rem;
+    font-size:2.7rem;
+    position: relative;
+    left: 0.8rem;
+    top: 1.5rem;
+    color: #fff;
+  }
+  
+  .Pressure {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: #56A5F1;
+    position: relative;
+    top: 0.2rem;
+  }
+  
+  .Pressure1 {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    position: relative;
+    top: 0.2rem;
+  
+  }
+  
+  .Place {
+    display: flex;
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    color: #026EED;
+    position: relative;
+    top: 0.6rem;
+  }
+  
+  .Place1 {
+    display: flex;
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    position: relative;
+    top: 0.6rem;
+  }
+  
+  
+  .Place h3 {
+    right: 2rem;
+    position: relative;
+    font-size: 13px;
+    height: 3rem;
+    width: 4rem;
+    font-family: 'Lato', sans-serif;
+    top: 0.4rem;
+    color: #026EED;
+    font-weight: bold;
+   
+  }
+  
+  .Place1 h3 {
+    right: 2rem;
+    position: relative;
+    font-size: 13px;
+    height: 3rem;
+    width: 4rem;
+    font-family: 'Lato', sans-serif;
+    top: 0.4rem;
+    color: #fff;
+    font-weight: bold;
+   
+  }
+  .Place h2 {
+    height: 3.4rem ;
+    width: 12rem;
+    left: 1xrem;
+  }
+  .Button{
+    position: relative;
+    left: 12rem;
+    top: 2rem;
+    height: 10px;
+    width: 10px;
+  }
+  
+  .Button button{
+    width: 9.8rem;
+    font-size: 14px;
+    height: 2.9rem;
+  }
+
+  
+}
+
+
+
 
 
 
