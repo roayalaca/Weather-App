@@ -51,11 +51,11 @@ const Weather = ({ component, set, dark, setDark }) => {
                     <div className={`Data ${dark ? 'Data1'  : 'Data'}`}>
 
                         <div className={`Icon ${dark ? 'Icon1'  : 'Icon'}`}>
-                        <h1><span>{ String( temperature ? Math.round(component.main?.temp - 273.15) : Math.round( ((component.main?.temp * (9/5)) - 459.67 )  ))  }</span></h1>
+                        <h1><span>{ String( temperature ? Math.round(component.main?.temp - 273.15) + "°C": Math.round( ((component.main?.temp * (9/5)) - 459.67 )  ) + "°F")  }</span></h1>
                         </div>
                         <div className={`Pressure ${dark ? 'Pressure1'  : 'Pressure'}`}>
-                        <h3>Pressure: <span>{component.main?.pressure}</span></h3>
-                        <h3>Humidity: <span>{component.main?.humidity}</span></h3>
+                        <h3>Pressure: <span>{component.main?.pressure}</span> hPa</h3>
+                        <h3>Humidity: <span>{component.main?.humidity}</span> %</h3>
                         </div>
                         <div className={`Place ${dark ? 'Place1'  : 'Place'}`}>
                         <h2>{component.name}, {component.sys?.country}</h2>

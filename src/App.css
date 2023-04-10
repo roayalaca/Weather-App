@@ -497,15 +497,15 @@ input:checked + .slider:before {
 
   .Image{
     z-index: 10;
-    left : -4rem;
-    bottom: 4.5rem;
+    left : -3.5rem;
+    bottom: 4.2rem;
     position: relative;
     
   }
   
   .Image img {
-    width: 140px;
-    height: 170px;
+    width: 130px;
+    height: 160px;
   }
 
   
@@ -513,10 +513,10 @@ input:checked + .slider:before {
 
   width: 6rem;
   height: 7.5rem;
-  font-size:1.7rem;
+  font-size:1.3rem;
   position: relative;
-  left: 0.8rem;
-  top: 1rem;
+  left: 0.3rem;
+  top: 1.5rem;
   color: #026EED;
 }
 
@@ -525,10 +525,10 @@ input:checked + .slider:before {
 
   width: 6rem;
   height: 7.5rem;
-  font-size:1.7rem;
+  font-size:1.3rem;
   position: relative;
-  left: 0.8rem;
-  top: 1rem;
+  left: 0.3rem;
+  top: 1.5rem;
   color: #fff;
 }
 
@@ -538,6 +538,7 @@ input:checked + .slider:before {
   color: #56A5F1;
   position: relative;
   top: -2.5rem;
+  left: 0.3rem;
 }
 
 .Pressure1 {
@@ -546,6 +547,7 @@ input:checked + .slider:before {
   color: #fff;
   position: relative;
   top: -2.5rem;
+  left: 0.3rem;
 
 }
 
@@ -556,6 +558,7 @@ input:checked + .slider:before {
   color: #026EED;
   position: relative;
   top: -2rem;
+  left: 0.3rem;
 }
 
 .Place1 {
@@ -796,13 +799,13 @@ input:checked + .slider:before {
     z-index: 10;
     position: relative;
     bottom: 4.5rem;
-    left: -4.8rem;
+    left: -3.7rem;
     
   }
   
   .Image img {
-    width: 153px;
-    height: 183px;
+    width: 140px;
+    height: 170px;
   }
 
   
@@ -810,10 +813,10 @@ input:checked + .slider:before {
 
   width: 6rem;
   height: 7.5rem;
-  font-size:1.9rem;
+  font-size:1.4rem;
   position: relative;
-  left: 0.8rem;
-  top: 1rem;
+  left: 0.3rem;
+  top: 1.5rem;
   color: #026EED;
 }
 
@@ -822,10 +825,10 @@ input:checked + .slider:before {
 
   width: 6rem;
   height: 7.5rem;
-  font-size:1.9rem;
+  font-size:1.4rem;
   position: relative;
-  left: 0.8rem;
-  top: 1rem;
+  left: 0.3rem;
+  top: 1.5rem;
   color: #fff;
 }
 
@@ -835,6 +838,7 @@ input:checked + .slider:before {
   color: #56A5F1;
   position: relative;
   top: -2.2rem;
+  left: 0.3rem;
 }
 
 .Pressure1 {
@@ -843,6 +847,7 @@ input:checked + .slider:before {
   color: #fff;
   position: relative;
   top: -2.2rem;
+  left: 0.3rem;
 
 }
 
@@ -853,6 +858,7 @@ input:checked + .slider:before {
   color: #026EED;
   position: relative;
   top: -1.8rem;
+  left: 0.3rem;
 }
 
 .Place1 {
@@ -862,6 +868,7 @@ input:checked + .slider:before {
   color: #fff;
   position: relative;
   top: -1.8rem;
+  left: 0.3rem;
 }
 
 
@@ -907,6 +914,42 @@ input:checked + .slider:before {
   width: 8rem;
   font-size: 12px;
   height: 2.5rem;
+}
+
+.loader{
+  background-image: radial-gradient(#D5F3FF 0%, #51B4E8 100%);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  font-family: 'Lato', sans-serif;
+  color: #FFFFFF;
+  font-size: 13px;
+}
+
+.loader h1{
+  position: relative;
+  right: 0rem;
+  top: 0.6rem;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+  top: 1rem;
 }
 
 }
@@ -1066,13 +1109,13 @@ input:checked + .slider:before {
     z-index: 10;
     position: relative;
     bottom: 4.8rem;
-    left: 1.8rem;
+    left: 2.8rem;
     
   }
   
   .Image img {
-    width: 160px;
-    height: 190px;
+    width: 150px;
+    height: 180px;
   }
 
   
@@ -1080,10 +1123,10 @@ input:checked + .slider:before {
 
   width: 6rem;
   height: 7.5rem;
-  font-size:1.9rem;
+  font-size:1.8rem;
   position: relative;
-  left: 0.8rem;
-  top: 1rem;
+  left: 0.3rem;
+  top: 1.5rem;
   color: #026EED;
 }
 
@@ -1092,10 +1135,10 @@ input:checked + .slider:before {
 
   width: 6rem;
   height: 7.5rem;
-  font-size:1.9rem;
+  font-size:1.8rem;
   position: relative;
-  left: 0.8rem;
-  top: 1rem;
+  left: 0.3rem;
+  top: 1.5rem;
   color: #fff;
 }
 
@@ -1104,7 +1147,8 @@ input:checked + .slider:before {
   font-family: 'Lato', sans-serif;
   color: #56A5F1;
   position: relative;
-  top: -1.8rem;
+  top: -1.3rem;
+  left: 0.3rem;
 }
 
 .Pressure1 {
@@ -1113,6 +1157,8 @@ input:checked + .slider:before {
   color: #fff;
   position: relative;
   top: -1.8rem;
+  top: -1.3rem;
+  left: 0.3rem;
 
 }
 
@@ -1122,7 +1168,8 @@ input:checked + .slider:before {
   font-family: 'Lato', sans-serif;
   color: #026EED;
   position: relative;
-  top: -1.1rem;
+  top: -0.7rem;
+  left: 0.3rem;
 }
 
 .Place1 {
@@ -1131,7 +1178,8 @@ input:checked + .slider:before {
   font-family: 'Lato', sans-serif;
   color: #fff;
   position: relative;
-  top: -1.1rem;
+  top: -0.7rem;
+  left: 0.3rem;
 }
 
 
@@ -1177,6 +1225,42 @@ input:checked + .slider:before {
   width: 9.5rem;
   font-size: 12px;
   height: 2.6rem;
+}
+
+.loader{
+  background-image: radial-gradient(#D5F3FF 0%, #51B4E8 100%);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  font-family: 'Lato', sans-serif;
+  color: #FFFFFF;
+  font-size: 15px;
+}
+
+.loader h1{
+  position: relative;
+  right: -0.5rem;
+  top: 0.7rem;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+  top: 1rem;
 }
 
 }
@@ -1345,13 +1429,13 @@ input:checked + .slider:before {
     z-index: 10;
     position: relative;
     bottom: 5rem;
-    left: -0.9rem;
+    left: -0.5rem;
     
   }
   
   .Image img {
-    width: 168px;
-    height: 198px;
+    width: 162px;
+    height: 192px;
   }
 
   
@@ -1359,10 +1443,10 @@ input:checked + .slider:before {
 
   width: 6rem;
   height: 7.5rem;
-  font-size:2.2rem;
+  font-size:1.8rem;
   position: relative;
   left: 0.8rem;
-  top: 1.3rem;
+  top: 1.8rem;
   color: #026EED;
 }
 
@@ -1371,10 +1455,10 @@ input:checked + .slider:before {
 
   width: 6rem;
   height: 7.5rem;
-  font-size:2.2rem;
+  font-size:1.8rem;
   position: relative;
   left: 0.8rem;
-  top: 1.3rem;
+  top: 1.8rem;
   color: #fff;
 }
 
@@ -1383,7 +1467,8 @@ input:checked + .slider:before {
   font-family: 'Lato', sans-serif;
   color: #56A5F1;
   position: relative;
-  top: -1.2rem;
+  top: -0.7rem;
+  left: 0.8rem;
 }
 
 .Pressure1 {
@@ -1391,7 +1476,8 @@ input:checked + .slider:before {
   font-family: 'Lato', sans-serif;
   color: #fff;
   position: relative;
-  top: -1.2rem;
+  top: -0.7rem;
+  left: 0.8rem;
 
 }
 
@@ -1401,7 +1487,8 @@ input:checked + .slider:before {
   font-family: 'Lato', sans-serif;
   color: #026EED;
   position: relative;
-  top: -0.5rem;
+  top: -0.2rem;
+  left: 0.8rem;
 }
 
 .Place1 {
@@ -1410,7 +1497,8 @@ input:checked + .slider:before {
   font-family: 'Lato', sans-serif;
   color: #fff;
   position: relative;
-  top: -0.5rem;
+  top: -0.2rem;
+  left: 0.8rem;
 }
 
 
@@ -1456,6 +1544,42 @@ input:checked + .slider:before {
   width: 9.5rem;
   font-size: 12px;
   height: 2.6rem;
+}
+
+.loader{
+  background-image: radial-gradient(#D5F3FF 0%, #51B4E8 100%);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  font-family: 'Lato', sans-serif;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.loader h1{
+  position: relative;
+  right: -1.8rem;
+  top: 1.2rem;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+  top: 1rem;
 }
 
 }
@@ -1610,24 +1734,24 @@ input:checked + .slider:before {
   .Image{
     z-index: 10;
     position: relative;
-    bottom: 8rem;
-    left: 11rem;
+    bottom: 7.5rem;
+    left: 11.5rem;
     
   }
   
   .Image img {
-    width: 178px;
-    height: 208px;
+    width: 168px;
+    height: 198px;
   }
 
   .Icon {
 
     width: 6rem;
     height: 7.5rem;
-    font-size:2.7rem;
+    font-size:2.1rem;
     position: relative;
     left: 0.8rem;
-    top: 1.5rem;
+    top: 2.3rem;
     color: #026EED;
   }
   
@@ -1636,10 +1760,10 @@ input:checked + .slider:before {
   
     width: 6rem;
     height: 7.5rem;
-    font-size:2.7rem;
+    font-size:2.1rem;
     position: relative;
     left: 0.8rem;
-    top: 1.5rem;
+    top: 2.3rem;
     color: #fff;
   }
   
@@ -1649,6 +1773,7 @@ input:checked + .slider:before {
     color: #56A5F1;
     position: relative;
     top: 0.2rem;
+    left: 0.8rem;
   }
   
   .Pressure1 {
@@ -1657,6 +1782,7 @@ input:checked + .slider:before {
     color: #fff;
     position: relative;
     top: 0.2rem;
+    left: 0.8rem;
   
   }
   
@@ -1723,6 +1849,42 @@ input:checked + .slider:before {
     height: 2.9rem;
   }
 
+  .loader{
+    background-image: radial-gradient(#D5F3FF 0%, #51B4E8 100%);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
+    font-size: 20px;
+  }
+  
+  .loader h1{
+    position: relative;
+    right: 1rem;
+    top: -0.5rem;
+  }
+  
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+    top: -1.5rem;
+    right: 2rem;
+  }
   
 }
 

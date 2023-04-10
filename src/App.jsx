@@ -25,7 +25,6 @@ function App() {
       })
       .catch( error => console.error(error))
       .finally( () => setLoader(false) )
-
     });
 
 
